@@ -1,0 +1,293 @@
+*{
+    box-sizing:border-box;
+}
+
+html,
+body{
+    width:100%;
+    height:100%;
+    margin:0;
+    overflow:hidden;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:#0f1020;
+}
+
+
+
+#bg{
+
+    position:fixed;
+
+    inset:0;
+
+    overflow:hidden;
+
+    z-index:0;
+
+    background:
+
+        radial-gradient(
+            circle at top,
+            rgba(255,255,255,0.12),
+            transparent 35%
+        ),
+
+        linear-gradient(
+            135deg,
+            #11111a,
+            #1a1227,
+            #0f1320
+        );
+
+}
+
+
+
+#bg img{
+
+    position:absolute;
+
+    object-fit:cover;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.5);
+
+}
+
+
+
+/* ================= PAGE ================= */
+
+.page{
+
+    position:fixed;
+
+    inset:0;
+
+    display:none;
+
+    z-index:3;
+
+}
+
+
+
+.page.active{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+
+
+/* ================= CENTER BOX ================= */
+
+.center-box{
+
+    text-align:center;
+
+    padding:25px;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,0.1);
+
+    backdrop-filter:blur(10px);
+
+}
+
+
+
+.title{
+
+    margin:0;
+
+    font-size:clamp(30px,6vw,70px);
+
+    color:#ffd6f7;
+
+}
+
+
+
+.subtitle{
+
+    margin-top:10px;
+
+    color:#fff;
+
+}
+
+
+
+.btn{
+
+    margin-top:20px;
+
+    padding:12px 28px;
+
+    border:none;
+
+    border-radius:999px;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #ffe27a,
+            #ff7cb6
+        );
+
+}
+
+
+
+/* ================= PAGE2 BUTTON ================= */
+
+.page2-btn{
+
+    position:absolute;
+
+    bottom:30px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+}
+
+
+
+/* ================= WISH CARD ================= */
+
+.wish-card{
+
+    width:min(560px,92vw);
+
+    max-height:80vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+    padding:20px;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,0.15);
+
+    backdrop-filter:blur(10px);
+
+    color:white;
+
+}
+
+
+
+/* title */
+
+.wish-title{
+
+    font-size:26px;
+
+    text-align:center;
+
+}
+
+
+
+/* scroll area */
+
+.wish-scroll{
+
+    flex:1;
+
+    overflow-y:auto;
+
+    overflow-x:hidden;
+
+    padding:10px;
+
+    border-radius:15px;
+
+    background:rgba(0,0,0,0.2);
+
+    -webkit-overflow-scrolling:touch;
+
+}
+
+
+
+/* text */
+
+.wish-text{
+
+    white-space:pre-line;
+
+    word-break:break-word;
+
+    line-height:1.7;
+
+    font-size:18px;
+
+}
+
+
+
+/* from */
+
+.wish-from{
+
+    text-align:right;
+
+    font-style:italic;
+
+}
+
+
+
+/* button */
+
+.next-btn{
+
+    align-self:center;
+
+}
+
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width:600px){
+
+    .title{
+
+        font-size:40px;
+
+    }
+
+    .wish-text{
+
+        font-size:16px;
+
+    }
+
+}
+
+#bg img{
+    will-change: transform, left, top;
+    transform: translateZ(0);
+}

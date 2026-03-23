@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- WAJIB buat HP -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Birthday</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="bg"></div>
+
+
+<!-- PAGE 1 -->
+<div id="page1" class="page active">
+
+    <div class="center-box">
+
+        <h1 class="title">
+            Welcome To Website
+        </h1>
+
+        <p class="subtitle">
+            A little surprise for your special day
+        </p>
+
+        <button id="start" class="btn">
+            START
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- PAGE 2 -->
+<div id="page2" class="page">
+
+    <button id="to3" class="btn page2-btn">
+        NEXT
+    </button>
+
+</div>
+
+
+
+<!-- PAGE 3 -->
+<div id="page3" class="page">
+
+    <div class="wish-card">
+
+        <div class="wish-title">
+            Birthday Wish
+        </div>
+
+        <div class="wish-scroll">
+
+            <div id="wishText" class="wish-text"></div>
+
+        </div>
+
+        <div id="wishFrom" class="wish-from"></div>
+
+        <button id="next" class="btn next-btn">
+            NEXT
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<script>
+
+const images = [
+    "img/1.jpeg",
+    "img/2.jpeg",
+    "img/3.jpeg",
+    "img/4.jpeg",
+    "img/5.jpeg",
+    "img/6.jpeg",
+    "img/7.jpeg",
+    "img/8.jpeg",
+    "img/9.jpeg",
+    "img/10.jpeg",
+    "img/12.jpeg",
+    "img/12.jpeg",
+    "img/13.jpeg",
+    "img/14.jpeg",
+    "img/15.jpeg",
+    "img/16.jpeg",
+    "img/17.jpeg",
+    "img/18.jpeg",
+    "img/19.jpeg",
+    "img/20.jpeg",
+    "img/21.jpeg",
+    "img/22.jpeg",
+    "img/23.jpeg",
+    "img/24.jpeg",
+    "img/25.jpeg",
+    "img/26.jpeg",
+    "img/27.jpeg",
+    "img/28.jpeg",
+];
+
+
+const wishes = [
+
+    {
+        text:
+        "buat acaa sehat selaluu, sukses teruss, langgeng sama ojan smpe nikah smpe pnya anakk cucu jdii nenek kakekk, jadii yg lebih baikk pokoknya",
+        from:
+        "liyaa cwee yg paling imutt seduniaa"
+    },
+
+    {
+        text:
+        "Selamat ulang tahun 🎉\n\nSemoga panjang umur, sehat selalu, dan semua yang kamu harapkan bisa tercapai.\n\n Jangan lupa THR CAAAAAAAA:v. kalo ada apa2 ceritakan ke ojan/liya/aku, kita selalu ada buat lu, sorry yak kalo webnya simpel abis bingung njir mau buat gmn, ya wish u the best.",
+        from:
+        "Website Developer ANJAYYYY"
+    },
+
+    {
+        text:
+        "HBD si paling nyawit🌴,panjang umur,dilancarkan rezekinya_-",
+        from:
+        "jimbut"
+    },
+
+    {
+        text:
+        "Semoga panjang umur sehat selalu, bahagia terus ae kek gitu ae dah",
+        from:
+        "ojan banget bukan?"
+    },
+];
+
+</script>
+
+
+<script src="anim.js"></script>
+
+</body>
+</html>
